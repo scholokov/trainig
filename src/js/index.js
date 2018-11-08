@@ -1,1 +1,2 @@
-console.log('Привет, Parcel!')
+// index.js
+import '../sass/main.scss';

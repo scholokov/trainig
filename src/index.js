@@ -1,1 +1,1 @@
-console.log('Привет, Parcel!')
+require('bootstrap');

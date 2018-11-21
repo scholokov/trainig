@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calc</title>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./sass/main.scss">
+</head>
+
+<body>
+    <header id="top" class="header">
+        <h1>Header Text</h1>
+        <nav class="nav">
+            <h2>Navigation</h2>
+            <ul class="main-menu">
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./about.html">О сайте</a></li>
+                <li><a href="./blog/blog.html">Блог</a></li>
+                <li><a href="./contacts.html">Контакты</a></li>
+                <li><a href="./bootstrap.html">Bootstrap</a></li>
+                <li><a href="http://google.com">Google</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Cacl</h1>
+
+    <form>
+        <input type="text" id="firstNumberField" value="" readonly>
+        <br>
+        <input type="text" id="result" value="" readonly>
+        <br>
+        <input onclick="funNumber(7)" type="button" id="b7" value="7">
+        <input onclick="funNumber(8)" type="button" id="b8" value="8">
+        <input onclick="funNumber(9)" type="button" id="b9" value="9">
+        <br>
+        <input onclick="funNumber(4)" type="button" id="b4" value="4">
+        <input onclick="funNumber(5)" type="button" id="b5" value="5">
+        <input onclick="funNumber(6)" type="button" id="b6" value="6">
+        <br>
+        <input onclick="funNumber(1)" type="button" id="b1" value="1">
+        <input onclick="funNumber(2)" type="button" id="b2" value="2">
+        <input onclick="funNumber(3)" type="button" id="b3" value="3">
+        <br>
+        <input onclick="funFunction('+')" type="button" id="plus" value="+">
+        <input onclick="funNumber(0)" type="button" id="b0" value="0">
+        <input onclick="funFunction('-')" type="button" id="minus" value="-">
+        <br>
+        <input onclick="funFunction('/')" type="button" id="division" value="/">
+        <input onclick="funFunction('*')" type="button" id="multiplication" value="*">
+        <input onclick="funResult()"type="button" id="equal" value="=">
+    </form>
+
+
+    <script>
+        var
+            firstNumber,
+            needToEmptyFiledFlag = false,
+            FuncType,
+            clearAttempFlag = false;
+            
+        function funNumber(inputNumber) {   // первый проход
+            if (clearAttempFlag = true){
+                result.value = '';
+                result.value = inputNumber;
+                clearAttempFlag = false;
+                // firstNumber = undefined;
+                needToEmptyFiledFlag = false;
+            }
+            else if (firstNumber === undefined){
+                result.value += inputNumber;
+                needToEmptyFiledFlag = false;
+            }
+            else if (needToEmptyFiledFlag === false) // второй проход. первое число запомнил. обнуляем поле ввода
+            {
+                result.value = '';
+                result.value = inputNumber;
+                needToEmptyFiledFlag = true;
+            }
+            else{        // второй проход. первое число запомнил
+                result.value += inputNumber;
+            }
+        }
+
+        function funFunction(funType) {
+            if (firstNumber === undefined){
+                firstNumberField.value = parseInt(result.value) + funType;
+                firstNumber = parseInt(result.value);
+                FuncType = funType;
+            }
+        }
+        function funResult() {
+            console.log(firstNumber);
+            console.log(FuncType);
+            firstNumberField.value = "";
+            if (FuncType === "+" )
+                result.value = firstNumber + parseInt(result.value);
+            else if (FuncType === "-" )
+                result.value = firstNumber - parseInt(result.value);
+            else if (FuncType === "*" )
+                result.value = firstNumber * parseInt(result.value);
+            else if (FuncType === "/" )
+                result.value = firstNumber / parseInt(result.value);
+            needToEmptyFiledFlag === false;
+            clearAttempFlag = true;
+        }
+
+    </script>
+
+
+</body>
+
+</html>

@@ -51,7 +51,9 @@
         <br>
         <input onclick="funFunction('/')" type="button" id="division" value="/">
         <input onclick="funFunction('*')" type="button" id="multiplication" value="*">
-        <input onclick="funResult()"type="button" id="equal" value="=">
+        <input onclick="funResult()" type="button" id="equal" value="=">
+        <br>
+        <input onclick="funClear()" type="button" id="clear" value="C">
     </form>
 
 
@@ -60,29 +62,18 @@
             firstNumber,
             needToEmptyFiledFlag = false,
             FuncType,
-            clearAttempFlag = false;
+            clearAttempFlag = true;
             
-        function funNumber(inputNumber) {   // первый проход
-            if (clearAttempFlag = true){
+        function funNumber(inputNumber) {   
+            if (firstNumber !== undefined && needToEmptyFiledFlag === false){  // первый знаменатель уже заполнен. очищаем поле
                 result.value = '';
-                result.value = inputNumber;
-                clearAttempFlag = false;
-                // firstNumber = undefined;
-                needToEmptyFiledFlag = false;
+                needToEmptyFiledFlag = true;      
             }
-            else if (firstNumber === undefined){
-                result.value += inputNumber;
-                needToEmptyFiledFlag = false;
-            }
-            else if (needToEmptyFiledFlag === false) // второй проход. первое число запомнил. обнуляем поле ввода
-            {
+            else if (firstNumber === undefined && clearAttempFlag === false){  // первый знаменатель уже заполнен
                 result.value = '';
-                result.value = inputNumber;
-                needToEmptyFiledFlag = true;
+                clearAttempFlag = true;
             }
-            else{        // второй проход. первое число запомнил
                 result.value += inputNumber;
-            }
         }
 
         function funFunction(funType) {
@@ -92,22 +83,72 @@
                 FuncType = funType;
             }
         }
-        function funResult() {
-            console.log(firstNumber);
-            console.log(FuncType);
-            firstNumberField.value = "";
-            if (FuncType === "+" )
-                result.value = firstNumber + parseInt(result.value);
-            else if (FuncType === "-" )
-                result.value = firstNumber - parseInt(result.value);
-            else if (FuncType === "*" )
-                result.value = firstNumber * parseInt(result.value);
-            else if (FuncType === "/" )
-                result.value = firstNumber / parseInt(result.value);
-            needToEmptyFiledFlag === false;
+
+        function funClear(){
+            firstNumber,
+            needToEmptyFiledFlag = false,
+            FuncType,
             clearAttempFlag = true;
+            result.value = '';
+            firstNumberField.value = ''; 
         }
 
+        function funResult() {
+            console.log("firstNumber: " + firstNumber);
+            console.log("FuncType: " + FuncType);
+            if (firstNumber !== undefined){
+                firstNumberField.value = "";
+                if (FuncType === "+" )
+                    result.value = firstNumber + parseInt(result.value);
+                else if (FuncType === "-" )
+                    result.value = firstNumber - parseInt(result.value);
+                else if (FuncType === "*" )
+                    result.value = firstNumber * parseInt(result.value);
+                else if (FuncType === "/" )
+                    result.value = firstNumber / parseInt(result.value);
+                needToEmptyFiledFlag = false;
+                clearAttempFlag = false;
+                firstNumber = undefined;
+            }
+            console.log("needToEmptyFiledFlag: " + needToEmptyFiledFlag);
+            console.log("clearAttempFlag: " + clearAttempFlag);
+            console.log("firstNumber: " + firstNumber);
+        }
+
+        function keyPress(e){
+            if (e.keyCode == 48){   //0
+                funNumber(0);
+            }
+            else if (e.keyCode == 49){  //1
+                funNumber(1);
+            }
+            else if (e.keyCode == 50){  //2
+                funNumber(2);
+            }
+            else if (e.keyCode == 51){  //3
+                funNumber(3);
+            }
+            else if (e.keyCode == 52){  //4
+                funNumber(4);
+            }
+            else if (e.keyCode == 53){  //5
+                funNumber(5);
+            }
+            else if (e.keyCode == 54){  //6
+                funNumber(6);
+            }
+            else if (e.keyCode == 55){  //7
+                funNumber(7);
+            }
+            else if (e.keyCode == 56){  //8
+                funNumber(8);
+            }
+            else if (e.keyCode == 57){  //9
+                funNumber(9);
+            }
+        }
+
+        window.addEventListener("keydown", keyPress, false);
     </script>
 
 

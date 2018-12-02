@@ -1,0 +1,47 @@
+.grid-container {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: rgb(243, 33, 191);
+    padding: 10px;
+  }
+
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+  #grid{
+    display: grid;
+  }
+  
+  #grid {
+    grid-template-areas: "H H H H H H H H H H H H"
+                         "N N N N M M M M M M M M"
+                         "F F F F F F F F F F F F"
+  }
+  
+  #grid > header {
+    grid-area: H;
+  }
+  
+  #grid > nav{
+    grid-area: N;
+  }
+  
+  #grid > main {
+    grid-area: M;
+  }
+  
+  #grid > footer {
+    grid-area: F;
+  }
+
+  img{
+    width: 100%;
+
+  }

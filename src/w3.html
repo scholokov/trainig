@@ -1,204 +1,56 @@
-
 <!DOCTYPE html>
 <html>
-<title>dd.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- <link rel="stylesheet" href="https://www.ddschools.com/ddcss/4/dd.css"> -->
-<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> -->
-<link rel="stylesheet" href="./sass/main.scss">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-</style>
+<include src="../partials/_head.html"></include>
 
 <style>
-  body, html {
+  /* body, html {
       height: 100%;
       font-family: "Inconsolata", sans-serif;
-  }
-  .bgimg {
+      margin: 0;
+  } */
+  /* .bgimg {
+      background-image: url("/img/49.jpg");
+      height: 100%; 
       background-position: center;
+      background-repeat: no-repeat;
       background-size: cover;
-      background-image: url("/img/003.jpg");
-      min-height: 100%;
-  }
+  } */
   /* .menu {
       display: none;
   } */
-  </style>
-<body class="dd-light-grey">
+</style>
 
-<!-- dd-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="dd-content" style="max-width:1880px">
+<body class="backcolor">
+  <div class="dd-content" style="max-width:1880px">
 
+    <include src="../partials/_nav.html"></include>
 
-<!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
-    <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block w3-black">HOME</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
-    </div>
-  </div>
-</div>
+    <include src="../partials/_header.html"></include>
 
+    <!-- Grid -->
+    <div class="dd-row">
 
-<!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <!-- <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-    <span class="w3-tag">Open from 6am to 5pm</span>
-  </div> -->
-  <div class="w3-display-middle w3-center">
-    <span class="w3-text-white" style="font-size:90px">the<br>Cafe</span>
-  </div>
-  <!-- <div class="w3-display-bottomright w3-center w3-padding-large">
-    <span class="w3-text-white">15 Adr street, 5015</span>
-  </div> -->
-</header>
+      <include src="../partials/_blog.html"></include>
 
+      <!-- Aside menu -->
+      <div class="dd-col l4">
+        <include src="../partials/_introduction.html"></include>
 
-<!-- Header -->
-<!-- <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-  <img class="w3-image" src="/img/003.jpg" alt="Hamburger Catering" width="1600" height="800">
-  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-    <h1 class="w3-xxlarge">Le Catering</h1>
-  </div>
-</header> -->
+        <include src="../partials/_popularPosts.html"></include>
 
-<!-- Header -->
-<!-- <header class="dd-container dd-center dd-padding-32"> 
-  <h1><b>Long-Travel</b></h1>
-  <p>Welcome to the blog of <span class="dd-tag">unknown</span></p>
-</header> -->
+        <include src="../partials/_tags.html"></include>
 
-<!-- Grid -->
-<div class="dd-row">
-
-<!-- Blog entries -->
-<div class="dd-col l8 s12">
-  <!-- Blog entry -->
-  <div class="dd-card-4 dd-margin dd-white">
-    <img src="/img/11.jpg" alt="Norway" style="width:100%"> 
-    <div class="dd-container">
-      <h3><b>Italy</b></h3>
-      <h5>Hungary - Austria - Italy - San Marina - Germany - Poland - Ukraine  <span class="dd-opacity">01-24.07.2016</span></h5>
-    </div>
-
-    <div class="dd-container">
-      <p>Длительное путешествие через 6 стран.</p>
-      <div class="dd-row">
-        <div class="dd-col m8 s12">
-          <p><button class="dd-button dd-padding-large dd-white dd-border"><b>READ MORE &raquo;</b></button></p>
-        </div>
+        <!-- END Aside Menu -->
       </div>
-    </div>
+
+      <!-- END GRID -->
+    </div><br>
+
+      <!-- END dd-content -->
   </div>
-  <hr>
 
-  <!-- Blog entry -->
-  <div class="dd-card-4 dd-margin dd-white">
-  <img src="/img/001.jpg" alt="Norway" style="width:100%"> 
-    <div class="dd-container">
-      <h3><b>BLOG ENTRY</b></h3>
-      <h5>Title description, <span class="dd-opacity">April 2, 2014</span></h5>
-    </div>
-
-    <div class="dd-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <div class="dd-row">
-        <div class="dd-col m8 s12">
-          <p><button class="dd-button dd-padding-large dd-white dd-border"><b>READ MORE &raquo;</b></button></p>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- END BLOG ENTRIES -->
-</div>
-
-<!-- Introduction menu -->
-<div class="dd-col l4">
-  <!-- About Card -->
-  <div class="dd-card dd-margin dd-margin-top">
-   <img src="/img/49.jpg" style="width:100%"> 
-    <div class="dd-container dd-white">
-      <h4><b>My Name</b></h4>
-      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
-    </div>
-  </div><hr>
-  
-  <!-- Posts -->
-  <div class="dd-card dd-margin">
-    <div class="dd-container dd-padding">
-      <h4>Popular Posts</h4>
-    </div>
-    <ul class="dd-ul dd-hoverable dd-white">
-      <li class="dd-padding-16">
-        <!-- <img src="/ddimages/workshop.jpg" alt="Image" class="dd-left dd-margin-right" style="width:50px">  -->
-        <span class="dd-large">Lorem</span><br>
-        <span>Sed mattis nunc</span>
-      </li>
-      <li class="dd-padding-16">
-        <!-- <img src="/ddimages/gondol.jpg" alt="Image" class="dd-left dd-margin-right" style="width:50px">  -->
-        <span class="dd-large">Ipsum</span><br>
-        <span>Praes tinci sed</span>
-      </li> 
-      <li class="dd-padding-16">
-        <!-- <img src="/ddimages/skies.jpg" alt="Image" class="dd-left dd-margin-right" style="width:50px">  -->
-        <span class="dd-large">Dorum</span><br>
-        <span>Ultricies congue</span>
-      </li>   
-      <li class="dd-padding-16 dd-hide-medium dd-hide-small">
-        <!-- <img src="/ddimages/rock.jpg" alt="Image" class="dd-left dd-margin-right" style="width:50px"> -->
-        <span class="dd-large">Mingsum</span><br>
-        <span>Lorem ipsum dipsum</span>
-      </li>  
-    </ul>
-  </div>
-  <hr> 
- 
-  <!-- Labels / tags -->
-  <div class="dd-card dd-margin">
-    <div class="dd-container dd-padding">
-      <h4>Tags</h4>
-    </div>
-    <div class="dd-container dd-white">
-    <p><span class="dd-tag dd-black dd-margin-bottom">Travel</span> <span class="dd-tag dd-light-grey dd-small dd-margin-bottom">New York</span> <span class="dd-tag dd-light-grey dd-small dd-margin-bottom">London</span>
-      <span class="dd-tag dd-light-grey dd-small dd-margin-bottom">IKEA</span> <span class="dd-tag dd-light-grey dd-small dd-margin-bottom">NORWAY</span> <span class="dd-tag dd-light-grey dd-small dd-margin-bottom">DIY</span>
-      <span class="dd-tag dd-light-grey dd-small dd-margin-bottom">Ideas</span> <span class="dd-tag dd-light-grey dd-small dd-margin-bottom">Baby</span> <span class="dd-tag dd-light-grey dd-small dd-margin-bottom">Family</span>
-      <span class="dd-tag dd-light-grey dd-small dd-margin-bottom">News</span> <span class="dd-tag dd-light-grey dd-small dd-margin-bottom">Clothing</span> <span class="dd-tag dd-light-grey dd-small dd-margin-bottom">Shopping</span>
-      <span class="dd-tag dd-light-grey dd-small dd-margin-bottom">Sports</span> <span class="dd-tag dd-light-grey dd-small dd-margin-bottom">Games</span>
-    </p>
-    </div>
-  </div>
-  
-<!-- END Introduction Menu -->
-</div>
-
-<!-- END GRID -->
-</div><br>
-
-<!-- END dd-content -->
-</div>
-
-<!-- Footer -->
-<footer class="dd-container dd-dark-grey dd-padding-32 dd-margin-top">
-  <!-- <button class="dd-button dd-black dd-disabled dd-padding-large dd-margin-bottom">Previous</button>
-  <button class="dd-button dd-black dd-padding-large dd-margin-bottom">Next &raquo;</button> -->
-  <p>Powered by <a href="https://www.ddschools.com/ddcss/default.asp" target="_blank">dd.css</a></p>
-
-
-  <!-- <include src="./partials/_footer.html"></include> -->
-</footer>
+  <include src="../partials/_footer.html"></include>
 
 </body>
+
 </html>

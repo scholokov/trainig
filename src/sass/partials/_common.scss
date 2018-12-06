@@ -1,25 +1,26 @@
 body{
-    color: $primary-color;
-    background-color: $primary-bg-color;
-    font-size: $font-size;
-    font-family: 'Mali', cursive;
-    line-height: $line-height;
+    font-family: "Raleway", sans-serif;
+    height: 100%;
+    margin: 0;
 }
+
+.backcolor{
+    color:#fff!important;
+    background-color:#616161!important
+}
+
+.formBackColor{
+color:#000!important;
+background-color:#fff!important
+}
+
 a{
     color: aqua;
     background-color: rgb(75%, 75%, 75% );
-}
-
-h1{
-    color: hsl(70, 100, 100);
-    font-size: 2.5em;
-}
-
-a {
     border-radius: 3px;
     display: inline-block;
     padding: 5px;
- }
+}
 
  a:link{
      text-decoration:  none;
@@ -29,3 +30,7 @@ a {
     outline-offset: 4px;
     background: #ffa;
  }
+
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{
+    display:block
+}

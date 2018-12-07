@@ -1,86 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<include src="../partials/_head.html"></include>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Main Page</title>
-    <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
-    <script src="./js/index.js"></script>
-    <link rel="stylesheet" href="./sass/main.scss">
-    <!--
-    <link href="css/main.css" rel="stylesheet">
- 
-    <style>
-        body{
-            background-color: aquamarine
-        }
-    </style>
-    -->
-</head>
+<body class="backcolor">
+  <div class="dd-content" style="max-width:1880px">
 
-<body>
-    <header id="top" class="header">
-        <h1>Header Text</h1>
-        <nav class="nav">
-            <h2>Navigation</h2>
-            <ul class="main-menu">
-                <li><a href="./index.html">Главная</a></li>
-                <li><a href="./about.html">О сайте</a></li>
-                <li><a href="./blog/blog.html">Блог</a></li>
-                <li><a href="./contacts.html">Контакты</a></li>
-                <li><a href="./bootstrap.html">Bootstrap</a></li>
-                <li><a href="./calc.html">Calc</a></li>
-                <li><a href="./blogpage.html">Blog Template</a></li>
-                <li><a href="http://google.com">Google</a></li>
-            </ul>
-        </nav>
-    </header>
+    <include src="../partials/_nav.html"></include>
 
-    
+    <include src="../partials/_heroImg.html"></include>
 
-    <time datetime="2018-09-25">25 Сентября 2018</time>
-    <a href="blog/blog.html#time">Blog foto</a>
+    <!-- Grid -->
+    <div class="dd-row">
 
-    <article>
-        <p>block
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. &lt;p&gt
-            Quaerat cupiditate eveniet, est pariatur aliquam a voluptate officia magnam,
-            voluptatum, minima quia dolorem voluptatibus at maiores culpa itaque suscipit veritatis iste!
-        </p>
-        <p>block
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. &lt;p&gt
-            Quaerat cupiditate eveniet, est pariatur aliquam a voluptate officia magnam,
-            voluptatum, minima quia dolorem voluptatibus at maiores culpa itaque suscipit veritatis iste!
-        </p>
-    </article>
-    <p>block
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. &lt;p&gt
-        Quaerat cupiditate eveniet, est pariatur aliquam a voluptate officia magnam,
-        voluptatum, minima quia dolorem voluptatibus at maiores culpa itaque suscipit veritatis iste! Lorem ipsum
-        dolor
-        sit amet consectetur adipisicing elit. Enim officiis maxime exercitationem beatae accusamus sed. Nostrum
-        repellat eveniet fuga veniam laboriosam, vero atque dicta non modi et necessitatibus tenetur? Ducimus.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, debitis quibusdam itaque vero atque
-        illum,
-        nam nobis porro deserunt non iusto ea reprehenderit. Porro vero iste non ab exercitationem et.
-    </p>
-    <p>block
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. &lt;p&gt
-        Quaerat cupiditate eveniet, est pariatur aliquam a voluptate officia magnam,
-        voluptatum, minima quia dolorem voluptatibus at maiores culpa itaque suscipit veritatis iste!
-    </p>
-    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nulla, a eius facilis, quaerat illum ea
-        nobis
-        voluptate animi cumque id? Rerum, quo animi! Repellat et eveniet libero explicabo ipsum?
-    </div>
-    <footer>Footer
+      <include src="../partials/_blog.html"></include>
 
-        
-    </footer>
+      <!-- Aside menu -->
+      <div class="dd-col l4">
+        <include src="../partials/_introduction.html"></include>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
+        <include src="../partials/_popularPosts.html"></include>
+
+        <include src="../partials/_tags.html"></include>
+
+        <!-- END Aside Menu -->
+      </div>
+
+      <!-- END GRID -->
+    </div><br>
+
+      <!-- END dd-content -->
+  </div>
+
+  <include src="../partials/_footer.html"></include>
+
 </body>
 
 </html>

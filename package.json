@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/scholokov/training#readme",
   "devDependencies": {
+    "cssnano": "^4.1.7",
     "posthtml-include": "^1.2.0",
     "sass": "^1.14.3"
   },

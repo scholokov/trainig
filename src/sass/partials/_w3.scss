@@ -60,36 +60,36 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .dd-table,.dd-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.dd-table-all{border:1px solid #ccc}
 .dd-bordered tr,.dd-table-all tr{border-bottom:1px solid #ddd}.dd-striped tbody tr:nth-child(even){background-color:#f1f1f1}
 .dd-table-all tr:nth-child(odd){background-color:#fff}.dd-table-all tr:nth-child(even){background-color:#f1f1f1}
-.dd-hoverable tbody tr:hover,.dd-ul.dd-hoverable li:hover{background-color:#ccc}.dd-centered tr th,.dd-centered tr td{text-align:center}
+// .dd-hoverable tbody tr:hover,.dd-ul.dd-hoverable li:hover{background-color:#ccc}.dd-centered tr th,.dd-centered tr td{text-align:center}
 .dd-table td,.dd-table th,.dd-table-all td,.dd-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
 .dd-table th:first-child,.dd-table td:first-child,.dd-table-all th:first-child,.dd-table-all td:first-child{padding-left:16px}
 .dd-btn,.dd-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
-.dd-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+// .dd-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
 .dd-btn,.dd-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
 .dd-disabled,.dd-btn:disabled,.dd-button:disabled{cursor:not-allowed;opacity:0.3}.dd-disabled *,:disabled *{pointer-events:none}
-.dd-btn.dd-disabled:hover,.dd-btn:disabled:hover{box-shadow:none}
+// .dd-btn.dd-disabled:hover,.dd-btn:disabled:hover{box-shadow:none}
 .dd-badge,.dd-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.dd-badge{border-radius:50%}
 .dd-ul{list-style-type:none;padding:0;margin:0}.dd-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.dd-ul li:last-child{border-bottom:none}
-.dd-tooltip,.dd-display-container{position:relative}.dd-tooltip .dd-text{display:none}.dd-tooltip:hover .dd-text{display:inline-block}
+// .dd-tooltip,.dd-display-container{position:relative}.dd-tooltip .dd-text{display:none}.dd-tooltip:hover .dd-text{display:inline-block}
 .dd-ripple:active{opacity:0.5}.dd-ripple{transition:opacity 0s}
 .dd-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
 .dd-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
-.dd-dropdown-click,.dd-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
-.dd-dropdown-hover:hover .dd-dropdown-content{display:block}
-.dd-dropdown-hover:first-child,.dd-dropdown-click:hover{background-color:#ccc;color:#000}
-.dd-dropdown-hover:hover > .dd-button:first-child,.dd-dropdown-click:hover > .dd-button:first-child{background-color:#ccc;color:#000}
+// .dd-dropdown-click,.dd-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+// .dd-dropdown-hover:hover .dd-dropdown-content{display:block}
+// .dd-dropdown-hover:first-child,.dd-dropdown-click:hover{background-color:#ccc;color:#000}
+// .dd-dropdown-hover:hover > .dd-button:first-child,.dd-dropdown-click:hover > .dd-button:first-child{background-color:#ccc;color:#000}
 .dd-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
 .dd-check,.dd-radio{width:24px;height:24px;position:relative;top:6px}
 .dd-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
-.dd-bar-block .dd-dropdown-hover,.dd-bar-block .dd-dropdown-click{width:100%}
-.dd-bar-block .dd-dropdown-hover .dd-dropdown-content,.dd-bar-block .dd-dropdown-click .dd-dropdown-content{min-width:100%}
-.dd-bar-block .dd-dropdown-hover .dd-button,.dd-bar-block .dd-dropdown-click .dd-button{width:100%;text-align:left;padding:8px 16px}
+// .dd-bar-block .dd-dropdown-hover,.dd-bar-block .dd-dropdown-click{width:100%}
+// .dd-bar-block .dd-dropdown-hover .dd-dropdown-content,.dd-bar-block .dd-dropdown-click .dd-dropdown-content{min-width:100%}
+// .dd-bar-block .dd-dropdown-hover .dd-button,.dd-bar-block .dd-dropdown-click .dd-button{width:100%;text-align:left;padding:8px 16px}
 .dd-main,#main{transition:margin-left .4s}
 .dd-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
 .dd-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
 .dd-bar{width:100%;overflow:hidden}.dd-center .dd-bar{display:inline-block;width:auto}
 .dd-bar .dd-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
-.dd-bar .dd-dropdown-hover,.dd-bar .dd-dropdown-click{position:static;float:left}
+// .dd-bar .dd-dropdown-hover,.dd-bar .dd-dropdown-click{position:static;float:left}
 .dd-bar .dd-button{white-space:normal}
 .dd-bar-block .dd-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
 .dd-bar-block.dd-center .dd-bar-item{text-align:center}.dd-block{display:block;width:100%}
@@ -260,7 +260,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 @media (max-width:768px){.dd-modal-content{width:500px}.dd-modal{padding-top:50px}}
 @media (min-width:993px){.dd-modal-content{width:900px}.dd-hide-large{display:none!important}.dd-sidebar.dd-collapse{display:block!important}}
 @media (max-width:992px) and (min-width:601px){.dd-hide-medium{display:none!important}}
-@media (max-width:992px){.dd-sidebar.dd-collapse{display:none}.dd-main{margin-left:0!important;margin-right:0!important}.dd-auto{max-width:100%}}
+@media (max-width:992px){.dd-sidebar.dd-collapse{display:none}.dd-main{margcin-left:0!important;margin-right:0!important}.dd-auto{max-width:100%}}
 
 
 
@@ -273,7 +273,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .dd-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
 .dd-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
 .dd-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
-.dd-display-container:hover .dd-display-hover{display:block}.dd-display-container:hover span.dd-display-hover{display:inline-block}.dd-display-hover{display:none}
+// .dd-display-container:hover .dd-display-hover{display:block}.dd-display-container:hover span.dd-display-hover{display:inline-block}.dd-display-hover{display:none}
 .dd-display-position{position:absolute}
 .dd-circle{border-radius:50%}
 .dd-round-small{border-radius:2px}.dd-round,.dd-round-medium{border-radius:4px}.dd-round-large{border-radius:8px}.dd-round-xlarge{border-radius:16px}.dd-round-xxlarge{border-radius:32px}
@@ -283,7 +283,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .dd-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
 .dd-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
 .dd-card,.dd-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
-.dd-card-4,.dd-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+// .dd-card-4,.dd-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
 .dd-spin{animation:dd-spin 2s infinite linear}@keyframes dd-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
 .dd-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
 .dd-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
@@ -293,11 +293,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .dd-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
 .dd-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
 .dd-animate-input{transition:width 0.4s ease-in-out}.dd-animate-input:focus{width:100%!important}
-.dd-opacity,.dd-hover-opacity:hover{opacity:0.60}.dd-opacity-off,.dd-hover-opacity-off:hover{opacity:1}
+// .dd-opacity,.dd-hover-opacity:hover{opacity:0.60}.dd-opacity-off,.dd-hover-opacity-off:hover{opacity:1}
 .dd-opacity-max{opacity:0.25}.dd-opacity-min{opacity:0.75}
-.dd-greyscale-max,.dd-grayscale-max,.dd-hover-greyscale:hover,.dd-hover-grayscale:hover{filter:grayscale(100%)}
+// .dd-greyscale-max,.dd-grayscale-max,.dd-hover-greyscale:hover,.dd-hover-grayscale:hover{filter:grayscale(100%)}
 .dd-greyscale,.dd-grayscale{filter:grayscale(75%)}.dd-greyscale-min,.dd-grayscale-min{filter:grayscale(50%)}
-.dd-sepia{filter:sepia(75%)}.dd-sepia-max,.dd-hover-sepia:hover{filter:sepia(100%)}.dd-sepia-min{filter:sepia(50%)}
+// .dd-sepia{filter:sepia(75%)}.dd-sepia-max,.dd-hover-sepia:hover{filter:sepia(100%)}.dd-sepia-min{filter:sepia(50%)}
 .dd-tiny{font-size:10px!important}.dd-small{font-size:12px!important}.dd-medium{font-size:15px!important}.dd-large{font-size:18px!important}
 .dd-xlarge{font-size:24px!important}.dd-xxlarge{font-size:36px!important}.dd-xxxlarge{font-size:48px!important}.dd-jumbo{font-size:64px!important}
 .dd-left-align{text-align:left!important}.dd-right-align{text-align:right!important}.dd-justify{text-align:justify!important}.dd-center{text-align:center!important}
@@ -314,9 +314,9 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .dd-padding-32{padding-top:32px!important;padding-bottom:32px!important}.dd-padding-48{padding-top:48px!important;padding-bottom:48px!important}
 .dd-padding-64{padding-top:64px!important;padding-bottom:64px!important}
 .dd-left{float:left!important}.dd-right{float:right!important}
-.dd-button:hover{color:#000!important;background-color:#ccc!important}
-.dd-transparent,.dd-hover-none:hover{background-color:transparent!important}
-.dd-hover-none:hover{box-shadow:none!important}
+// .dd-button:hover{color:#000!important;background-color:#ccc!important}
+// .dd-transparent,.dd-hover-none:hover{background-color:transparent!important}
+// .dd-hover-none:hover{box-shadow:none!important}
 /* Colors */
 // .dd-amber,.dd-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
 // .dd-aqua,.dd-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}

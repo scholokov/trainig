@@ -26,10 +26,11 @@ a{
      text-decoration:  none;
  }
 
-  a:hover, a:focus {
-    outline-offset: 4px;
+//   a:hover, a:focus {
+    // outline-offset: 4px;
     // background: #ffa;
- }
+    // border-style: none dotted dotted none;
+//  }
 
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{
     display:block

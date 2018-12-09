@@ -17,12 +17,45 @@ li a {
   
   li a:hover {
     background-color: #111;
+    color: white;
   }
 //   .right{
     
 //   }
+.navText{
+  float: left;
+  padding: 4px 100px;
+  font-size: 3em;
+}
+  
+.navSelected{
+  border-style: solid;
+}
+
+@media (min-width:1201px) and (max-width:1500px){
   .navText{
-    float: left;
     padding: 4px 100px;
-    font-size: 3em;
+    font-size: 2em;
   }
+}
+@media (min-width:993px) and (max-width:1250px){
+  .navText{
+    padding: 4px 75px;
+    font-size: 1.5em;
+  }
+}
+@media (max-width:992px) and (min-width:751px){
+  .navText{
+    padding: 4px 55px;
+    font-size: 1.25em;
+  }
+}
+@media (max-width:750px) and (min-width:401px){
+  .navText{
+    padding: 4px 40px;
+    font-size: 1.25em;
+  }
+  .bgmmm{
+    padding:20px 25%;
+  }
+}

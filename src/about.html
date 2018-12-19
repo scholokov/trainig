@@ -12,6 +12,44 @@
         <!-- Grid -->
         <div class="dd-row">
             <div class="dd-col l8 s12">
+
+
+                <script>
+                    var t = document.querySelector('blogentry');
+                    // Populate the src at runtime.
+                    t.content.querySelector('img').src = 'logo.png';
+
+                    var clone = document.importNode(t.content, true);
+                    document.body.appendChild(clone);
+                </script>
+
+
+                <!-- Blog entry -->
+                <div class="dd-card-4 dd-margin formBackColor">
+                    <img src="/img/001.jpg" alt="Norway" style="width:100%">
+                    <div class="dd-container">
+                        <p class="blogEntryMainTitle">Target country</p>
+                        <p class="blogEntrySecondTitle">Full list of countries</p>
+                        <p class="blogEntryDayTime"><time datetime="2008-02-14 20:00">April 1, 2020</time></p>
+                    </div>
+
+                    <div class="dd-container blogEntryText">
+                        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem
+                            euismod
+                            placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed
+                            ultricies mi non
+                            congue ullam corper. Praesent tincidunt sed
+                            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida
+                            diam non
+                            fringilla.</p>
+                        <p><button class="button-ditailes formBackColor dd-border"><b>READ MORE
+                                    &raquo;</b></button></p>
+                    </div>
+                </div>
+                <!-- END BLOG ENTRIES -->
+
+                <hr>
+
                 <!-- Blog entry -->
                 <div class="dd-card-4 dd-margin formBackColor">
                     <img src="/img/11.jpg" alt="Norway" style="width:100%">
@@ -76,7 +114,34 @@
         </div>
 
         <include src="../partials/_footer.html"></include>
-
 </body>
+
+<template id="blogentry">
+    <!-- Blog entry -->
+    <div class="dd-card-4 dd-margin formBackColor">
+        <img src="/img/001.jpg" alt="Norway" style="width:100%">
+        <div class="dd-container">
+            <p class="blogEntryMainTitle">Target country</p>
+            <p class="blogEntrySecondTitle">Full list of countries</p>
+            <p class="blogEntryDayTime"><time datetime="2008-02-14 20:00">April 1, 2020</time></p>
+        </div>
+
+        <div class="dd-container blogEntryText">
+            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem
+                euismod
+                placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed
+                ultricies mi non
+                congue ullam corper. Praesent tincidunt sed
+                tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida
+                diam non
+                fringilla.</p>
+            <p><button class="button-ditailes formBackColor dd-border"><b>READ MORE
+                        &raquo;</b></button></p>
+        </div>
+    </div>
+    <!-- END BLOG ENTRIES -->
+</template>
+
+
 
 </html>

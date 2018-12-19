@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<include src="../partials/_head.html"></include>
+
+<body class="backcolor">
+    <div class="dd-content" style="max-width:1880px">
+
+        <include src="../partials/_nav.html"></include>
+
+        <include src="../partials/_heroImg.html"></include>
+
+        <!-- Grid -->
+        <div class="dd-row">
+            <div class="dd-col l8 s12">
+
+
+
+
+        <button onclick="useIt()">Use me</button>
+        <div id="container"></div>
+        <script>
+            function useIt() {
+                const content = document.getElementById('blogentry').content;
+                // Update something in the template DOM.
+                var span = content.querySelector('span');
+                span.textContent = parseInt(span.textContent) + 1;
+                document.querySelector('#container').appendChild(
+                    document.importNode(content, true));
+            }
+        </script>
+            </div>
+        </div>
+
+        
+        <template id="blogentry">
+            <div>Template used: <span>0</span></div>
+            <div>some text</div>
+            <!-- <script>alert('Thanks!')</script> -->
+            <!-- Blog entry -->
+            <div class="dd-card-4 dd-margin formBackColor">
+                <img src="/img/001.jpg" alt="Norway" style="width:100%">
+                <div class="dd-container">
+                    <p class="blogEntryMainTitle">Target country</p>
+                    <p class="blogEntrySecondTitle">Full list of countries</p>
+                    <p class="blogEntryDayTime"><time datetime="2008-02-14 20:00">April 1, 2020</time></p>
+                </div>
+
+                <div class="dd-container blogEntryText">
+                    <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem
+                        euismod
+                        placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed
+                        ultricies mi non
+                        congue ullam corper. Praesent tincidunt sed
+                        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida
+                        diam non
+                        fringilla.</p>
+                    <p><button class="button-ditailes formBackColor dd-border"><b>READ MORE
+                                &raquo;</b></button></p>
+                </div>
+            </div>
+            <!-- END BLOG ENTRIES -->
+        </template>
+
+
+        <template id="blogentry">
+            <!-- Blog entry -->
+            <div class="dd-card-4 dd-margin formBackColor">
+                <img src="/img/001.jpg" alt="Norway" style="width:100%">
+                <div class="dd-container">
+                    <p class="blogEntryMainTitle">Target country</p>
+                    <p class="blogEntrySecondTitle">Full list of countries</p>
+                    <p class="blogEntryDayTime"><time datetime="2008-02-14 20:00">April 1, 2020</time></p>
+                </div>
+
+                <div class="dd-container blogEntryText">
+                    <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem
+                        euismod
+                        placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed
+                        ultricies mi non
+                        congue ullam corper. Praesent tincidunt sed
+                        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida
+                        diam non
+                        fringilla.</p>
+                    <p><button class="button-ditailes formBackColor dd-border"><b>READ MORE
+                                &raquo;</b></button></p>
+                </div>
+            </div>
+            <!-- END BLOG ENTRIES -->
+        </template>
+
+
+
+
+</html>
